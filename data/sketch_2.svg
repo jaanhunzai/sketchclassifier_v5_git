@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297 210"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="sketch_2.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="529.10943"
+     inkscape:cy="318.69321"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g927"
+     showgrid="false"
+     inkscape:window-width="3360"
+     inkscape:window-height="1975"
+     inkscape:window-x="-13"
+     inkscape:window-y="-13"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-87)">
+    <g
+       id="g927">
+      <g
+         inkscape:label="Layer 1"
+         id="layer1-0"
+         transform="matrix(1.0178611,0,0,1.0228857,-0.14331657,-3.4609896)">
+        <g
+           id="Sketch_Map_2"
+           transform="matrix(0.12588828,0,0,0.12688821,-29.310935,34.884459)">
+          <g
+             transform="rotate(90,1302.1,1259.7)"
+             id="g100">
+            <polygon
+               style="fill:#2d440f"
+               id="Mountain_5"
+               name="Mountain_5"
+               description="Mountain_5"
+               smart_skema_type="mountain"
+               class="st0"
+               points="1977.8,733 1940.5,642 1878.5,604 1896.5,691 1956.5,780 " />
+            <polygon
+               style="fill:#2d440f"
+               id="Mountain_4"
+               name="Mountain_4"
+               description="Mountain_4"
+               smart_skema_type="mountain"
+               class="st0"
+               points="1648.8,767.9 1699.8,757.4 1697.3,815.9 " />
+            <polygon
+               style="fill:#2d440f"
+               id="Mountain_3"
+               name="Mountain_3"
+               description="Mountain_3"
+               smart_skema_type="mountain"
+               class="st0"
+               points="1648.8,767.9 1551.3,695.9 1605.8,674.9 1648.8,703.9 " />
+            <polygon
+               style="fill:#2d440f"
+               id="Mountain_2"
+               name="Mountain_2"
+               description="Mountain_2"
+               smart_skema_type="mountain"
+               class="st0"
+               points="1551.3,695.9 1356.3,649.4 1486.3,616.9 " />
+            <polygon
+               style="fill:#2d440f"
+               id="Mountain_1"
+               name="Mountain_1"
+               description="Mountain_1"
+               smart_skema_type="mountain"
+               class="st0"
+               points="867.2,446.7 707.8,446.7 612.5,609.4 " />
+            <polygon
+               style="fill:#899eaa"
+               id="Marsh_3"
+               name="Marsh_3"
+               description="Marsh_3"
+               smart_skema_type="marsh"
+               class="st1"
+               points="1822.8,742.4 1800.8,669.4 1720.8,579.4 1605.8,544.4 1560.8,569.4 1737.8,796.4 " />
+            <polygon
+               style="fill:#899eaa"
+               id="Marsh_2"
+               name="Marsh_2"
+               description="Marsh_2"
+               smart_skema_type="marsh"
+               class="st1"
+               points="1212.6,750.4 1336.8,646.4 1329.3,609.4 1313.8,589.4 1270.8,579.4 1114.8,628.4 1085.8,680.4 " />
+            <path
+               style="fill:#899eaa"
+               inkscape:connector-curvature="0"
+               id="Marsh_1"
+               name="Marsh_1"
+               description="Marsh_1"
+               smart_skema_type="marsh"
+               class="st1"
+               d="m 600.3,1055.5 25.6,54.9 490,370 63,24 36.9,-18 42.3,-48.4 -15.1,-135.6 -68.8,-81 -125.3,-85 -97,-60 -35,-45 -64,-24 -34,-22 h -111 c 0,0 -82,16 -80,20 2,4 -22,29 -22,29 z" />
+            <circle
+               style="fill:#732706"
+               id="Boma_9"
+               name="Boma_9"
+               description="Boma_9"
+               smart_skema_type="boma"
+               class="st2"
+               cx="1673.3"
+               cy="853.29999"
+               r="14.4" />
+            <circle
+               style="fill:#732706"
+               id="Boma_8"
+               name="Boma_8"
+               description="Boma_8"
+               smart_skema_type="boma"
+               class="st2"
+               cx="1623.8"
+               cy="813.29999"
+               r="14.8" />
+            <circle
+               style="fill:#732706"
+               id="Boma_7"
+               name="Boma_7"
+               description="Boma_7"
+               smart_skema_type="boma"
+               class="st2"
+               cx="1575.6"
+               cy="750.40002"
+               r="16.200001" />
+            <circle
+               style="fill:#732706"
+               id="Boma_6"
+               name="Boma_6"
+               description="Boma_6"
+               smart_skema_type="boma"
+               class="st2"
+               cx="1530.3"
+               cy="826.09998"
+               r="17.299999" />
+            <circle
+               style="fill:#732706"
+               id="Boma_5"
+               name="Boma_5"
+               description="Boma_5"
+               smart_skema_type="boma"
+               class="st2"
+               cx="1415.3"
+               cy="716.09998"
+               r="20.299999" />
+            <circle
+               style="fill:#732706"
+               id="Boma_4"
+               name="Boma_4"
+               description="Boma_4"
+               smart_skema_type="boma"
+               class="st2"
+               cx="1361.1"
+               cy="890.59998"
+               r="20.299999" />
+            <circle
+               style="fill:#732706"
+               id="Boma_3"
+               name="Boma_3"
+               description="Boma_3"
+               smart_skema_type="boma"
+               class="st2"
+               cx="1077.1"
+               cy="1044.1"
+               r="20.299999" />
+            <circle
+               style="fill:#732706"
+               id="Boma_2"
+               name="Boma_2"
+               description="Boma_2"
+               smart_skema_type="boma"
+               class="st2"
+               cx="847.29999"
+               cy="1229"
+               r="31.5" />
+            <circle
+               style="fill:#732706"
+               id="Boma_1"
+               name="Boma_1"
+               description="Boma_1"
+               smart_skema_type="boma"
+               class="st2"
+               cx="733.29999"
+               cy="917.09998"
+               r="23.5" />
+            <rect
+               style="fill:#892a81"
+               id="School"
+               name="School"
+               description="School"
+               smart_skema_type="School"
+               x="1093.1"
+               y="517.29999"
+               transform="matrix(0.5635,-0.8261,0.8261,0.5635,26.9272,1173.9264)"
+               class="st3"
+               width="62.599998"
+               height="88.300003" />
+            <polygon
+               style="fill:#93a756"
+               id="Olopololi_9"
+               name="Olopololi_9"
+               description="Olopololi_9"
+               smart_skema_type="Olopololi"
+               class="st4"
+               points="1691.8,870.4 1634.8,917.1 1629.8,893.6 1687.7,861.6 " />
+            <polygon
+               style="fill:#93a756"
+               id="Olopololi_8"
+               name="Olopololi_8"
+               description="Olopololi_8"
+               smart_skema_type="Olopololi"
+               class="st4"
+               points="1634.8,786.6 1587.8,808.8 1580.8,796.4 1623.8,767.9 " />
+            <polygon
+               style="fill:#93a756"
+               id="Olopololi_7"
+               name="Olopololi_7"
+               description="Olopololi_7"
+               smart_skema_type="Olopololi"
+               class="st4"
+               points="1540.8,726.6 1547.6,711.4 1600.1,736.4 " />
+            <polygon
+               style="fill:#93a756"
+               id="Olopololi_6"
+               name="Olopololi_6"
+               description="Olopololi_6"
+               smart_skema_type="Olopololi"
+               class="st4"
+               points="1565.8,862.4 1503.8,884.4 1503.8,853.3 1560.8,838.9 " />
+            <path
+               style="fill:#93a756"
+               inkscape:connector-curvature="0"
+               id="Olopololi_5"
+               name="Olopololi_5"
+               description="Olopololi_5"
+               smart_skema_type="Olopololi"
+               class="st4"
+               d="m 1336.8,952.4 98.8,-68 25.3,56.3 c 0,0 -102.5,62.8 -99.8,59.8 2.7,-3 -24.3,-48.1 -24.3,-48.1 z" />
+            <polygon
+               style="fill:#93a756"
+               id="Olopololi_4"
+               name="Olopololi_4"
+               description="Olopololi_4"
+               smart_skema_type="Olopololi"
+               class="st4"
+               points="1388.8,726.4 1295.8,757.4 1288.8,726.4 1388.8,695.9 " />
+            <polygon
+               style="fill:#93a756"
+               id="Olopololi_3"
+               name="Olopololi_3"
+               description="Olopololi_3"
+               smart_skema_type="Olopololi"
+               class="st4"
+               points="1085.8,1004.9 1024.8,1052.4 1010.8,1029.4 1071.8,980.4 " />
+            <polygon
+               style="fill:#abc441"
+               id="Olopololi_2"
+               name="Olopololi_2"
+               description="Olopololi_2"
+               smart_skema_type="Olopololi"
+               class="st5"
+               points="871.3,1177.4 861.8,1191.4 837.1,1182.4 827.8,1191.4 802.8,1172.4 824.8,1148.4 " />
+            <polygon
+               style="fill:#93a756"
+               id="Olopololi_1"
+               name="Olopololi_1"
+               description="Olopololi_1"
+               smart_skema_type="Olopololi"
+               class="st4"
+               points="764.8,893.6 693.8,884.4 699.8,870.4 765.8,767.9 815.8,796.4 " />
+            <line
+               style="fill:none;stroke:#e3131c;stroke-width:4;stroke-miterlimit:10"
+               id="Boundary_6"
+               name="Boundary_6"
+               description="Boundary_6"
+               smart_skema_type="Boundary"
+               class="st6"
+               x1="585.79999"
+               y1="1110.4"
+               x2="1156.8"
+               y2="1553.9" />
+            <line
+               style="fill:none;stroke:#e3131c;stroke-width:4;stroke-miterlimit:10"
+               id="Boundary_5"
+               name="Boundary_5"
+               description="Boundary_5"
+               smart_skema_type="Boundary"
+               class="st6"
+               x1="1156.8"
+               y1="1553.9"
+               x2="1897.8"
+               y2="704.40002" />
+            <line
+               style="fill:none;stroke:#e3131c;stroke-width:4;stroke-miterlimit:10"
+               id="Boundary_4"
+               name="Boundary_4"
+               description="Boundary_4"
+               smart_skema_type="Boundary"
+               class="st6"
+               x1="1897.8"
+               y1="704.40002"
+               x2="1324.8"
+               y2="692" />
+            <line
+               style="fill:none;stroke:#e3131c;stroke-width:4;stroke-miterlimit:10"
+               id="Boundary_3"
+               name="Boundary_3"
+               description="Boundary_3"
+               smart_skema_type="Boundary"
+               class="st6"
+               x1="1329.3"
+               y1="689.59998"
+               x2="1018.8"
+               y2="621.40002" />
+            <line
+               style="fill:none;stroke:#e3131c;stroke-width:4;stroke-miterlimit:10"
+               id="Boundary_2"
+               name="Boundary_2"
+               description="Boundary_2"
+               smart_skema_type="Boundary"
+               class="st6"
+               x1="760.79999"
+               y1="445.39999"
+               x2="1018.8"
+               y2="621.40002" />
+            <line
+               style="fill:none;stroke:#e30b17;stroke-width:4;stroke-miterlimit:10"
+               id="Boundary_1"
+               name="Boundary_1"
+               description="Boundary_1"
+               smart_skema_type="Boundary"
+               class="st7"
+               x1="760.79999"
+               y1="445.39999"
+               x2="585.79999"
+               y2="1110.4" />
+            <path
+               style="fill:none;stroke:#1d5aa7;stroke-width:9;stroke-miterlimit:10"
+               inkscape:connector-curvature="0"
+               id="River"
+               name="River"
+               description="River"
+               smart_skema_type="river"
+               class="st9"
+               d="m 702.9,2202.4 c -11.8,-73.2 -0.5,-125 12,-159 14,-38 26.1,-43.7 48,-97.5 26,-64 34,-117.3 36,-132 7.4,-54.1 -0.8,-61.4 3,-154.5 1.7,-41 2.9,-71.8 9,-114 13.5,-93.5 38.5,-158.2 48,-181.5 9.4,-23.1 9.8,-20.4 21,-46.5 11.8,-27.5 51,-122.1 70.5,-262.5 13,-93.7 -1.1,-75.4 10.5,-120 31.6,-122 126.9,-219 175.5,-268.5 1.5,-1.5 6.7,-5.4 12,-12 13.9,-17.3 14.4,-33.4 19.5,-48 7.1,-20.2 20.9,-31.7 40.5,-48 28.9,-24 58.8,-32.4 70.5,-36 58.7,-18 85.9,-46.5 148.5,-84 52.4,-31.4 139.4,-74.9 291,-127.5" />
+            <path
+               sodipodi:nodetypes="ccccccccccc"
+               style="fill:none;stroke:#1d1d1b;stroke-width:7;stroke-miterlimit:10"
+               inkscape:connector-curvature="0"
+               id="Path"
+               name="Path"
+               description="Path"
+               smart_skema_type="path"
+               class="st10"
+               d="m 1470.2211,2031.4 c -205.8,-32.7 -309.1211,-80.1 -316.4211,-120 -6,-32.6 16.9,-72.9 -9,-115 -4.3,-7 -21.9,-35.7 -50,-39 -49.3,-5.8 -71.5,73.7 -120,70 -39.9,-3 -66.5,-60.1 -69,-66 -15.9,-36.8 -1.5,-61.6 -20,-93 -17.5,-29.7 -46.1,-33.9 -79,-50 -70.1,-34.2 -115.7,-100.3 -133,-142 -50.8,-121.9 47,-257.5 54,-267 90.1,-121.4 233.4,-132.6 256,-134" />
+            <polygon
+               style="fill:#009fe3"
+               id="Bore_Hole_intact_"
+               name="Bore_Hole_intact_"
+               description="Bore_Hole_intact_"
+               smart_skema_type="borehole"
+               class="st11"
+               points="996.8,1070.4 968.8,1064.4 986.8,1088.4 " />
+            <polygon
+               style="fill:#009fe3"
+               id="Bore_Hole"
+               name="Bore_Hole"
+               description="Bore_Hole"
+               smart_skema_type="borehole"
+               class="st11"
+               points="723.8,1459.4 637.8,1459.4 673.3,1520.4 " />
+            <polygon
+               style="fill:#e30613"
+               id="Beacon_6"
+               name="Beacon_6"
+               description="Beacon_6"
+               smart_skema_type="beacon"
+               class="st12"
+               points="1172.8,1553.9 1140.8,1535.4 1146.8,1572.4 " />
+            <polygon
+               style="fill:#e30613"
+               id="Beacon_5"
+               name="Beacon_5"
+               description="Beacon_5"
+               smart_skema_type="beacon"
+               class="st12"
+               points="1912.8,711.4 1900.8,684.4 1882.8,711.4 " />
+            <polygon
+               style="fill:#e30613"
+               id="Beacon_4"
+               name="Beacon_4"
+               description="Beacon_4"
+               smart_skema_type="beacon"
+               class="st12"
+               points="1344.8,695.9 1320.8,674.9 1313.8,704.4 " />
+            <polygon
+               style="fill:#e30613"
+               id="Beacon_3"
+               name="Beacon_3"
+               description="Beacon_3"
+               smart_skema_type="beacon"
+               class="st12"
+               points="1038.8,616.9 1010.8,601.4 1010.8,641.4 " />
+            <polygon
+               style="fill:#e30613"
+               id="Beacon_2"
+               name="Beacon_2"
+               description="Beacon_2"
+               smart_skema_type="beacon"
+               class="st12"
+               points="776.8,445.4 753.8,431.4 744.8,459.4 " />
+            <polygon
+               style="fill:#e30613"
+               id="Beacon_1"
+               name="Beacon_1"
+               description="Beacon_1"
+               smart_skema_type="beacon"
+               class="st12"
+               points="605.8,1096.4 565.8,1096.4 586.8,1136.4 " />
+          </g>
+        </g>
+      </g>
+      <path
+         inkscape:connector-curvature="0"
+         id="NamangaRoad"
+         d="m 17.10525,204.79201 44.948486,29.20382 49.664924,32.26817 40.62497,25.65788"
+         style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#1d1d1b;stroke-width:3.10299993;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         sodipodi:nodetypes="cccc"
+         name="NamangaRoad"
+         smart_skema_type="road"
+         description="road" />
+    </g>
+  </g>
+  <style
+     id="style2"
+     type="text/css">
+	.st0{fill:#2D440F;}
+	.st1{fill:#899EAA;}
+	.st2{fill:#732706;}
+	.st3{fill:#892A81;}
+	.st4{fill:#93A756;}
+	.st5{fill:#ABC441;}
+	.st6{fill:none;stroke:#E3131C;stroke-width:4;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#E30B17;stroke-width:4;stroke-miterlimit:10;}
+	.st8{fill:#6B6B6B;}
+	.st9{fill:none;stroke:#1D5AA7;stroke-width:9;stroke-miterlimit:10;}
+	.st10{fill:none;stroke:#1D1D1B;stroke-width:7;stroke-miterlimit:10;}
+	.st11{fill:#009FE3;}
+	.st12{fill:#E30613;}
+</style>
+  <style
+     type="text/css"
+     id="style2-7">
+	.st0{fill:#2D440F;}
+	.st1{fill:#899EAA;}
+	.st2{fill:#732706;}
+	.st3{fill:#892A81;}
+	.st4{fill:#93A756;}
+	.st5{fill:#ABC441;}
+	.st6{fill:none;stroke:#E3131C;stroke-width:4;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#E30B17;stroke-width:4;stroke-miterlimit:10;}
+	.st8{fill:#6B6B6B;}
+	.st9{fill:none;stroke:#1D5AA7;stroke-width:9;stroke-miterlimit:10;}
+	.st10{fill:none;stroke:#1D1D1B;stroke-width:7;stroke-miterlimit:10;}
+	.st11{fill:#009FE3;}
+	.st12{fill:#E30613;}
+</style>
+</svg>

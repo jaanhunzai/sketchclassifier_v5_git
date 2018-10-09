@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "station_id": "ML36", "easting": 261025, "northing": 9743547 }, "geometry": { "type": "Point", "coordinates": [ 36.852005633813448, -2.321293944897384 ] } },
+{ "type": "Feature", "properties": { "station_id": "ML54", "easting": 261464, "northing": 9741347 }, "geometry": { "type": "Point", "coordinates": [ 36.855922630383269, -2.341190443363114 ] } },
+{ "type": "Feature", "properties": { "station_id": "ML52", "easting": 265590, "northing": 9741368 }, "geometry": { "type": "Point", "coordinates": [ 36.893007320234815, -2.341057078586902 ] } },
+{ "type": "Feature", "properties": { "station_id": "ML51", "easting": 264742, "northing": 9744483 }, "geometry": { "type": "Point", "coordinates": [ 36.885427368555227, -2.312882935934967 ] } },
+{ "type": "Feature", "properties": { "station_id": "M8", "easting": 265462, "northing": 9745583 }, "geometry": { "type": "Point", "coordinates": [ 36.891916213734412, -2.302944564017459 ] } },
+{ "type": "Feature", "properties": { "station_id": "K92", "easting": 264644, "northing": 9746087 }, "geometry": { "type": "Point", "coordinates": [ 36.884565037457534, -2.298376962516134 ] } }
+]
+}

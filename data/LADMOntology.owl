@@ -1,0 +1,1092 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY LADMOntology "http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#"
+     xml:base="http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:LADMOntology="http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#">
+    <owl:Ontology rdf:about="http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#share -->
+
+    <rdfs:Datatype rdf:about="&LADMOntology;share">
+        <owl:equivalentClass rdf:resource="&LADMOntology;share"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#containsOtherGroupParties -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;containsOtherGroupParties"/>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#dependsOn -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;dependsOn">
+        <rdfs:range rdf:resource="&LADMOntology;Context"/>
+        <rdfs:domain rdf:resource="&LADMOntology;Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#describesBFace -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;describesBFace">
+        <rdfs:range rdf:resource="&LADMOntology;BoundaryFace"/>
+        <rdfs:domain rdf:resource="&LADMOntology;SpatialSource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#describesBFaceString -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;describesBFaceString">
+        <rdfs:range rdf:resource="&LADMOntology;BoundaryFaceString"/>
+        <rdfs:domain rdf:resource="&LADMOntology;SpatialSource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#describesPoint -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;describesPoint">
+        <rdfs:domain rdf:resource="&LADMOntology;SpatialSource"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&LADMOntology;describesPoint"/>
+                <owl:onClass rdf:resource="&LADMOntology;Point"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#describesSpatialExtent -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;describesSpatialExtent">
+        <rdfs:domain rdf:resource="&LADMOntology;SpatialSource"/>
+        <rdfs:range rdf:resource="&LADMOntology;SpatialUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasAdminSourceBAUnit -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasAdminSourceBAUnit">
+        <rdfs:domain rdf:resource="&LADMOntology;AdminSource"/>
+        <rdfs:range rdf:resource="&LADMOntology;BAUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasAdminSourceParty -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasAdminSourceParty">
+        <rdfs:domain rdf:resource="&LADMOntology;AdminSource"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&LADMOntology;hasAdminSourceParty"/>
+                <owl:onClass rdf:resource="&LADMOntology;Party"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasAdminSourceRRR -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasAdminSourceRRR">
+        <rdfs:domain rdf:resource="&LADMOntology;AdminSource"/>
+        <rdfs:range rdf:resource="&LADMOntology;RRR"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasBASpatialUnit -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasBASpatialUnit">
+        <rdfs:domain rdf:resource="&LADMOntology;BAUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasBAUnitAdminSource -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasBAUnitAdminSource">
+        <rdfs:range rdf:resource="&LADMOntology;AdminSource"/>
+        <rdfs:domain rdf:resource="&LADMOntology;BAUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasBAUnitRRR -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasBAUnitRRR">
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&LADMOntology;hasBAUnitRRR"/>
+                <owl:onClass rdf:resource="&LADMOntology;RRR"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasBAUnitResponsibility -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasBAUnitResponsibility">
+        <rdfs:subPropertyOf rdf:resource="&LADMOntology;hasBAUnitRRR"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasBAUnitRestriction -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasBAUnitRestriction">
+        <rdfs:subPropertyOf rdf:resource="&LADMOntology;hasBAUnitRRR"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasBAUnitRight -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasBAUnitRight">
+        <rdfs:subPropertyOf rdf:resource="&LADMOntology;hasBAUnitRRR"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasBAUnitSpatialSource -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasBAUnitSpatialSource">
+        <rdfs:domain rdf:resource="&LADMOntology;BAUnit"/>
+        <rdfs:range rdf:resource="&LADMOntology;SpatialSource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasMortgage -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasMortgage">
+        <rdfs:domain rdf:resource="&LADMOntology;Right"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&LADMOntology;hasMortgage"/>
+                <owl:onClass rdf:resource="&LADMOntology;Mortgage"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasMortgageRight -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasMortgageRight">
+        <owl:inverseOf rdf:resource="&LADMOntology;hasMortgage"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&LADMOntology;hasMortgageRight"/>
+                <owl:onClass rdf:resource="&LADMOntology;Right"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasPartyMembers -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasPartyMembers">
+        <rdfs:domain rdf:resource="&LADMOntology;GroupParty"/>
+        <rdfs:range rdf:resource="&LADMOntology;PartyMember"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&LADMOntology;hasPartyMembers"/>
+                <owl:onClass rdf:resource="&LADMOntology;PartyMember"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasRRR -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasRRR">
+        <rdfs:domain rdf:resource="&LADMOntology;Party"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&LADMOntology;hasRRR"/>
+                <owl:onClass rdf:resource="&LADMOntology;RRR"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasRRROnBAUnit -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasRRROnBAUnit">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&LADMOntology;BAUnit"/>
+        <rdfs:domain rdf:resource="&LADMOntology;RRR"/>
+        <owl:inverseOf rdf:resource="&LADMOntology;hasBAUnitRRR"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasRequiredRelationshipBAUnit -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasRequiredRelationshipBAUnit"/>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasResponsibility -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasResponsibility">
+        <rdfs:domain rdf:resource="&LADMOntology;Party"/>
+        <rdfs:range rdf:resource="&LADMOntology;Responsibility"/>
+        <rdfs:subPropertyOf rdf:resource="&LADMOntology;hasRRR"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasResponsibilityOnBAUnit -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasResponsibilityOnBAUnit">
+        <rdfs:range rdf:resource="&LADMOntology;BAUnit"/>
+        <rdfs:domain rdf:resource="&LADMOntology;Responsibility"/>
+        <rdfs:subPropertyOf rdf:resource="&LADMOntology;hasRRROnBAUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasResponsibilityParty -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasResponsibilityParty">
+        <owl:inverseOf rdf:resource="&LADMOntology;hasResponsibility"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&LADMOntology;hasResponsibilityParty"/>
+                <owl:onClass rdf:resource="&LADMOntology;Party"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasRestriction -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasRestriction">
+        <rdfs:domain rdf:resource="&LADMOntology;Party"/>
+        <rdfs:range rdf:resource="&LADMOntology;Restriction"/>
+        <rdfs:subPropertyOf rdf:resource="&LADMOntology;hasRRR"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasRestrictionOnBAUnit -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasRestrictionOnBAUnit">
+        <rdfs:range rdf:resource="&LADMOntology;BAUnit"/>
+        <rdfs:domain rdf:resource="&LADMOntology;Restriction"/>
+        <rdfs:subPropertyOf rdf:resource="&LADMOntology;hasRRROnBAUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasRestrictionParty -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasRestrictionParty">
+        <owl:inverseOf rdf:resource="&LADMOntology;hasRestriction"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&LADMOntology;hasRestrictionParty"/>
+                <owl:onClass rdf:resource="&LADMOntology;Party"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&LADMOntology;hasRestrictionParty"/>
+                <owl:onClass rdf:resource="&LADMOntology;Party"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasRight -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasRight">
+        <rdfs:domain rdf:resource="&LADMOntology;Party"/>
+        <rdfs:range rdf:resource="&LADMOntology;Right"/>
+        <rdfs:subPropertyOf rdf:resource="&LADMOntology;hasRRR"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasRightOnBAUnit -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasRightOnBAUnit">
+        <rdfs:range rdf:resource="&LADMOntology;BAUnit"/>
+        <rdfs:domain rdf:resource="&LADMOntology;Right"/>
+        <rdfs:subPropertyOf rdf:resource="&LADMOntology;hasRRROnBAUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasRightParty -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasRightParty">
+        <owl:inverseOf rdf:resource="&LADMOntology;hasRight"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&LADMOntology;hasRightParty"/>
+                <owl:onClass rdf:resource="&LADMOntology;Party"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasRole -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasRole">
+        <rdfs:range rdf:resource="&LADMOntology;Role"/>
+        <rdfs:domain rdf:resource="&LADMOntology;RolePlayer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasSpatialSourceBAUnit -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasSpatialSourceBAUnit">
+        <owl:inverseOf rdf:resource="&LADMOntology;hasBAUnitSpatialSource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasSpatialSourceParty -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;hasSpatialSourceParty">
+        <rdfs:domain rdf:resource="&LADMOntology;SpatialSource"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&LADMOntology;hasSpatialSourceParty"/>
+                <owl:onClass rdf:resource="&LADMOntology;Party"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#isRegisteredAs -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;isRegisteredAs">
+        <rdfs:domain rdf:resource="&LADMOntology;Party"/>
+        <rdfs:range rdf:resource="&LADMOntology;PartyMember"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#isSupportedBy -->
+
+    <owl:ObjectProperty rdf:about="&LADMOntology;isSupportedBy">
+        <rdfs:domain rdf:resource="&LADMOntology;RRR"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&LADMOntology;isSupportedBy"/>
+                <owl:onClass rdf:resource="&LADMOntology;AdminSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasBeginLifeVersion -->
+
+    <owl:DatatypeProperty rdf:about="&LADMOntology;hasBeginLifeVersion">
+        <rdfs:domain rdf:resource="&LADMOntology;VersionedObject"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasEndLifeVersion -->
+
+    <owl:DatatypeProperty rdf:about="&LADMOntology;hasEndLifeVersion">
+        <rdfs:domain rdf:resource="&LADMOntology;VersionedObject"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasShare -->
+
+    <owl:DatatypeProperty rdf:about="&LADMOntology;hasShare">
+        <rdfs:domain rdf:resource="&LADMOntology;PartyMember"/>
+        <rdfs:range rdf:resource="&LADMOntology;share"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#hasTotalShare -->
+
+    <owl:DatatypeProperty rdf:about="&LADMOntology;hasTotalShare">
+        <rdfs:domain rdf:resource="&LADMOntology;PartyMember"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#AdminPublicServitude -->
+
+    <owl:Class rdf:about="&LADMOntology;AdminPublicServitude">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Restriction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#AdminSource -->
+
+    <owl:Class rdf:about="&LADMOntology;AdminSource">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Context"/>
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Source"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#AgriActivity -->
+
+    <owl:Class rdf:about="&LADMOntology;AgriActivity">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Right"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Association -->
+
+    <owl:Class rdf:about="&LADMOntology;Association">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;GroupParty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#BAUnit -->
+
+    <owl:Class rdf:about="&LADMOntology;BAUnit">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;RolePlayer"/>
+        <rdfs:subClassOf rdf:resource="&LADMOntology;VersionedObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&LADMOntology;hasRequiredRelationshipBAUnit"/>
+                <owl:hasSelf rdf:datatype="&xsd;boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#BAUnitGroup -->
+
+    <owl:Class rdf:about="&LADMOntology;BAUnitGroup">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;GroupParty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Bank -->
+
+    <owl:Class rdf:about="&LADMOntology;Bank">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;MoneyProvider"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#BasicPropertyUnit -->
+
+    <owl:Class rdf:about="&LADMOntology;BasicPropertyUnit">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;BAUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#BoundaryFace -->
+
+    <owl:Class rdf:about="&LADMOntology;BoundaryFace">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;VersionedObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#BoundaryFaceString -->
+
+    <owl:Class rdf:about="&LADMOntology;BoundaryFaceString">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;VersionedObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#CertifiedSurveyor -->
+
+    <owl:Class rdf:about="&LADMOntology;CertifiedSurveyor">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Surveyor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Citizen -->
+
+    <owl:Class rdf:about="&LADMOntology;Citizen">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#CommonOwnership -->
+
+    <owl:Class rdf:about="&LADMOntology;CommonOwnership">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Right"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Context -->
+
+    <owl:Class rdf:about="&LADMOntology;Context">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;VersionedObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Conveyancer -->
+
+    <owl:Class rdf:about="&LADMOntology;Conveyancer">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#CustomaryType -->
+
+    <owl:Class rdf:about="&LADMOntology;CustomaryType">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Right"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Employee -->
+
+    <owl:Class rdf:about="&LADMOntology;Employee">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Family -->
+
+    <owl:Class rdf:about="&LADMOntology;Family">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;GroupParty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Farmer -->
+
+    <owl:Class rdf:about="&LADMOntology;Farmer">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#FireWood -->
+
+    <owl:Class rdf:about="&LADMOntology;FireWood">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Right"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Fishing -->
+
+    <owl:Class rdf:about="&LADMOntology;Fishing">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Right"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Grazing -->
+
+    <owl:Class rdf:about="&LADMOntology;Grazing">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Right"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Group -->
+
+    <owl:Class rdf:about="&LADMOntology;Group">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;RolePlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#GroupParty -->
+
+    <owl:Class rdf:about="&LADMOntology;GroupParty">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Party"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&LADMOntology;containsOtherGroupParties"/>
+                <owl:hasSelf rdf:datatype="&xsd;boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#InformalOccupation -->
+
+    <owl:Class rdf:about="&LADMOntology;InformalOccupation">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Right"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Lease -->
+
+    <owl:Class rdf:about="&LADMOntology;Lease">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Right"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#LeasedUnit -->
+
+    <owl:Class rdf:about="&LADMOntology;LeasedUnit">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;BAUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Level -->
+
+    <owl:Class rdf:about="&LADMOntology;Level">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;VersionedObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#LevelPayment -->
+
+    <owl:Class rdf:about="&LADMOntology;LevelPayment">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Mortgage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Linear -->
+
+    <owl:Class rdf:about="&LADMOntology;Linear">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Mortgage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Microcredit -->
+
+    <owl:Class rdf:about="&LADMOntology;Microcredit">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Mortgage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#MoneyProvider -->
+
+    <owl:Class rdf:about="&LADMOntology;MoneyProvider">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Monument -->
+
+    <owl:Class rdf:about="&LADMOntology;Monument">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Restriction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#MonumentMaintenance -->
+
+    <owl:Class rdf:about="&LADMOntology;MonumentMaintenance">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Responsibility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#MonumentPartly -->
+
+    <owl:Class rdf:about="&LADMOntology;MonumentPartly">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Restriction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Mortgage -->
+
+    <owl:Class rdf:about="&LADMOntology;Mortgage">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Restriction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#NaturalPerson -->
+
+    <owl:Class rdf:about="&LADMOntology;NaturalPerson">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;RolePlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#NoBuilding -->
+
+    <owl:Class rdf:about="&LADMOntology;NoBuilding">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Restriction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#NonNaturalPerson -->
+
+    <owl:Class rdf:about="&LADMOntology;NonNaturalPerson">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;RolePlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Notary -->
+
+    <owl:Class rdf:about="&LADMOntology;Notary">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Occupation -->
+
+    <owl:Class rdf:about="&LADMOntology;Occupation">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Right"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Ownership -->
+
+    <owl:Class rdf:about="&LADMOntology;Ownership">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Right"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#OwnershipAssumed -->
+
+    <owl:Class rdf:about="&LADMOntology;OwnershipAssumed">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Right"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Party -->
+
+    <owl:Class rdf:about="&LADMOntology;Party">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Role"/>
+        <rdfs:subClassOf rdf:resource="&LADMOntology;VersionedObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#PartyMember -->
+
+    <owl:Class rdf:about="&LADMOntology;PartyMember">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;VersionedObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Point -->
+
+    <owl:Class rdf:about="&LADMOntology;Point">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;VersionedObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#RRR -->
+
+    <owl:Class rdf:about="&LADMOntology;RRR">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;VersionedObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Responsibility -->
+
+    <owl:Class rdf:about="&LADMOntology;Responsibility">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;RRR"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Restriction -->
+
+    <owl:Class rdf:about="&LADMOntology;Restriction">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;RRR"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Right -->
+
+    <owl:Class rdf:about="&LADMOntology;Right">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;RRR"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#RightOfUseUnit -->
+
+    <owl:Class rdf:about="&LADMOntology;RightOfUseUnit">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;BAUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Role -->
+
+    <owl:Class rdf:about="&LADMOntology;Role">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;VersionedObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#RolePlayer -->
+
+    <owl:Class rdf:about="&LADMOntology;RolePlayer">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;VersionedObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Servitude -->
+
+    <owl:Class rdf:about="&LADMOntology;Servitude">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Restriction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#ServitudePartly -->
+
+    <owl:Class rdf:about="&LADMOntology;ServitudePartly">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Restriction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Source -->
+
+    <owl:Class rdf:about="&LADMOntology;Source">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;VersionedObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#SpatialSource -->
+
+    <owl:Class rdf:about="&LADMOntology;SpatialSource">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Context"/>
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Source"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#SpatialUnit -->
+
+    <owl:Class rdf:about="&LADMOntology;SpatialUnit">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;VersionedObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#SpatialUnitGroup -->
+
+    <owl:Class rdf:about="&LADMOntology;SpatialUnitGroup">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;VersionedObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#StateAdministrator -->
+
+    <owl:Class rdf:about="&LADMOntology;StateAdministrator">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Superficies -->
+
+    <owl:Class rdf:about="&LADMOntology;Superficies">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Right"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Surveyor -->
+
+    <owl:Class rdf:about="&LADMOntology;Surveyor">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Tenancy -->
+
+    <owl:Class rdf:about="&LADMOntology;Tenancy">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Right"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Tribe -->
+
+    <owl:Class rdf:about="&LADMOntology;Tribe">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;GroupParty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Usufruct -->
+
+    <owl:Class rdf:about="&LADMOntology;Usufruct">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Right"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#VersionedObject -->
+
+    <owl:Class rdf:about="&LADMOntology;VersionedObject"/>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Waterrights -->
+
+    <owl:Class rdf:about="&LADMOntology;Waterrights">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Right"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#WaterwayMaintenance -->
+
+    <owl:Class rdf:about="&LADMOntology;WaterwayMaintenance">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Responsibility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Writer -->
+
+    <owl:Class rdf:about="&LADMOntology;Writer">
+        <rdfs:subClassOf rdf:resource="&LADMOntology;Party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
